@@ -2,8 +2,13 @@ import { Component, ViewChild } from '@angular/core';
 
 import { Platform, MenuController, Nav } from 'ionic-angular';
 
-import { HelloIonicPage } from '../pages/hello-ionic/hello-ionic';
-import { ListPage } from '../pages/list/list';
+import { PeerModule } from '../pages/peer/peer';
+import { ChatsPage } from '../pages/chats/chats';
+import { TutorialPage } from '../pages/tutorial/tutorial';
+import { ResourcesPage } from '../pages/resources/resources';
+import { MapsPage } from '../pages/maps/maps';
+import { SearchPage } from '../pages/search/search';
+
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
@@ -15,8 +20,8 @@ import { SplashScreen } from '@ionic-native/splash-screen';
 export class MyApp {
   @ViewChild(Nav) nav: Nav;
 
-  // make HelloIonicPage the root (or first) page
-  rootPage = HelloIonicPage;
+  // make TutorialPage the root (or first) page
+  rootPage = TutorialPage;
   pages: Array<{title: string, component: any}>;
 
   constructor(
@@ -29,8 +34,13 @@ export class MyApp {
 
     // set our app's pages
     this.pages = [
-      { title: 'Hello Ionic', component: HelloIonicPage },
-      { title: 'My First List', component: ListPage }
+      { title: 'Peer Support', component: PeerModule },
+      { title: 'Chats', component: ChatsPage },
+      { title: 'Tutorial', component: TutorialPage },
+      { title: 'Resources', component: ResourcesPage },
+      { title: 'Maps', component: MapsPage },
+      { title: 'Search', component: SearchPage }
+
     ];
   }
 

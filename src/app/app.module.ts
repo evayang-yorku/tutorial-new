@@ -3,9 +3,16 @@ import { NgModule, ErrorHandler } from '@angular/core';
 import { IonicApp, IonicModule, IonicErrorHandler } from 'ionic-angular';
 import { MyApp } from './app.component';
 
-import { HelloIonicPage } from '../pages/hello-ionic/hello-ionic';
-import { ItemDetailsPage } from '../pages/item-details/item-details';
-import { ListPage } from '../pages/list/list';
+import { ProfilePage } from '../pages/profile/profile';
+import { ChatsPage } from '../pages/chats/chats';
+import { PeerModule } from '../pages/peer/peer';
+import { TutorialPage } from '../pages/tutorial/tutorial';
+import { ResourcesPage } from '../pages/resources/resources';
+import { MapsPage } from '../pages/maps/maps';
+import { AboutUsPage } from '../pages/tutorial-about/about';
+import { CommunityPage } from '../pages/tutorial-community/community';
+import { InstitutionalPage } from '../pages/tutorial-institutional/institutional';
+import { SearchPage } from '../pages/search/search';
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
@@ -13,9 +20,16 @@ import { SplashScreen } from '@ionic-native/splash-screen';
 @NgModule({
   declarations: [
     MyApp,
-    HelloIonicPage,
-    ItemDetailsPage,
-    ListPage
+    ProfilePage,
+    ChatsPage,
+    PeerModule,
+    TutorialPage,
+    ResourcesPage,
+    MapsPage,
+    AboutUsPage,
+    CommunityPage,
+    InstitutionalPage,
+    SearchPage
   ],
   imports: [
     BrowserModule,
@@ -24,9 +38,16 @@ import { SplashScreen } from '@ionic-native/splash-screen';
   bootstrap: [IonicApp],
   entryComponents: [
     MyApp,
-    HelloIonicPage,
-    ItemDetailsPage,
-    ListPage
+    ProfilePage,
+    ChatsPage,
+    PeerModule,
+    TutorialPage,
+    ResourcesPage,
+    MapsPage,    
+    AboutUsPage,
+    CommunityPage,
+    InstitutionalPage,
+    SearchPage
   ],
   providers: [
     StatusBar,

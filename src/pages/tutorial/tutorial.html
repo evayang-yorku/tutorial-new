@@ -1,0 +1,20 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Tutorial</ion-title>
+  </ion-navbar>
+</ion-header>
+
+
+<ion-content padding>
+
+  <img class="img" src="assets/img/tut-background.png">  
+  <button ion-button clear class="left" [navPush] = "toProfile">Profile</button>
+  <button ion-button clear class="top" [navPush] = "toCommunity">Community<br/>Functions</button>
+  <button ion-button clear class="right" [navPush] = "toInstitutional">Institutional<br/>Functions</button>
+  <button ion-button clear class="bottom" [navPush] = "toAbout">About Us</button>
+
+
+</ion-content>
